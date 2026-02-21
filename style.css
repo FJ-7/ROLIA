@@ -1,0 +1,27 @@
+html, body {
+  margin: 0%;
+ height: 100%;
+}
+
+body {
+  background-color: #ffffff;
+  /* color:#00ff0d; */
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.color-change {
+    
+    animation: color-change 26s infinite; 
+}
+
+@keyframes color-change {
+    0% { color: rgb(247, 0, 0); }   
+    25% { color: rgb(16, 255, 3); }
+    50% { color: rgb(17, 0, 255); }  
+    75% { color: rgb(255, 66, 28); } 
+    100% { color: rgb(247, 41, 0); }
+} 
