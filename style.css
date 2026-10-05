@@ -14,7 +14,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #F8F9FA;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 
@@ -36,13 +36,13 @@ header img {
 }
 
 header p {
-  width: 400px;
+  width: 500px;
   margin-left: 57px;
   margin-bottom: 20px;
   /*color: #fe0100;*/
   color:black;
   text-align: left;
-  font-size: 0.75rem;
+  font-size: 17px;
   font-weight: 200;
   letter-spacing: .5em;
 }
@@ -79,15 +79,16 @@ main {
 
 a {
   text-decoration: none;
-  color: #fe0100;
+  color: #cfc7fc;
   font-size: 15px;
+  font-weight: 400;
   
 }
 
 
 
 a:hover {
-color: #fafafe; /* Keeps text white, or change to match the glow */
+color: #fe0100; /* Keeps text white, or change to match the glow */
   
   /* Stacking text-shadows creates the ambient glow effect */
   text-shadow: 
@@ -101,6 +102,7 @@ color: #fafafe; /* Keeps text white, or change to match the glow */
 @media (max-width: 880px) {
   body {
     align-items: center;
+    padding: 1rem;
   }
 
   header {
@@ -114,10 +116,18 @@ color: #fafafe; /* Keeps text white, or change to match the glow */
   }
 
   header p {
-    width: min(400px, 100%);
+     width: min(500px, 100%);
     margin: 0 auto 20px;
+
     text-align: center;
-    font-size: 10px;
+
+    font-size: 17px;
+
+    letter-spacing: .08em;
+
+    white-space: nowrap;
+    transform: translateX(-0px);
+    
   }
 
   main {
