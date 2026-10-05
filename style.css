@@ -9,71 +9,123 @@
 
 html,
 body {
-  width: 100%;
-  min-height: 100%;
+    min-height: 100svh;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
   background-color: #F8F9FA;
   font-family: "Roboto", sans-serif;
 }
 
-body {
-  min-height: 100svh;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-}
+
 
 header {
-  width: fit-content;
+
+  width: min(500px, 100%);
+
   text-align: left;
-  
+
 }
 
 header img {
   display: block;
-  width: 300px;
+  width: min(400px, 100%);
+  height: auto;
+  
+
 }
 
 header p {
-  width: 300px;
-  margin-top: 0.5rem;
-  color: #fe0100;
-  text-align: center;
+  width: 400px;
+  margin-left: 57px;
+  margin-bottom: 20px;
+  /*color: #fe0100;*/
+  color:black;
+  text-align: left;
   font-size: 0.75rem;
   font-weight: 200;
-  letter-spacing: .3em;
+  letter-spacing: .5em;
 }
 
 main {
   width: min(500px, 100%);
-  margin: auto;
-  text-align: center;
+  margin-top: 50px;
+  margin-left: 57px;
+  margin-right: 57px;
+  
  
 }
 
 
   main > p {
-  line-height: 1.6;
+  line-height: 2;
   letter-spacing: .23em;
-  max-width: 450px;
-  margin: 0 auto 1rem;
-  font-size: 14px;
-  font-weight: 400 ;
+  max-width: 100%;
+  margin: 0 auto 20px;
+  font-size: 15px;
+  font-weight: 350 ;
 }
 
 
 .contact {
   display: flex;
-  justify-content: center;
+  margin: 5rem auto 1rem ;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: flex-start;
+  
+  
 }
 
-@media (max-width: 600px) {
+a {
+  text-decoration: none;
+  color: #fe0100;
+  font-size: 15px;
+  
+}
+
+
+
+a:hover {
+color: #fafafe; /* Keeps text white, or change to match the glow */
+  
+  /* Stacking text-shadows creates the ambient glow effect */
+  text-shadow: 
+    0 0 5px #cfc7fc,    /* Small, sharp inner glow */
+    0 0 10px #cfc7fc,   /* Medium glow */
+    0 0 20px #cfc7fc,   /* Wide ambient glow */
+    0 0 40px #cfc7fc,   /* Extra wide background glow */
+    0 0 80px #cfc7fc;   /* Deep background glow */
+}
+
+@media (max-width: 880px) {
   body {
     align-items: center;
   }
 
   header {
     text-align: center;
+  }
+
+  header img {
+    margin: 0 auto;
+  }
+
+  header p {
+    margin: 0 auto 20px;
+    text-align: center;
+  }
+
+  main {
+    margin: 50px 0 0;
+    text-align: center;
+  }
+
+  main p {
+    text-align: center;
+  }
+
+  .contact {
+    justify-content: center;
   }
 }
