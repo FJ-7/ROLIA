@@ -102,7 +102,7 @@ color: #fe0100; /* Keeps text white, or change to match the glow */
 @media (max-width: 880px) {
   body {
     align-items: center;
-    padding: 1rem;
+    padding: .2rem;
   }
 
   header {
