@@ -10,14 +10,14 @@ The goal was to create a clean, minimal, responsive website that communicates th
 - HTML5
 - CSS3
 - GitHub
-- Google fonts
+- Google Fonts
 
 # Development
 
 This project was built from scratch using HTML and CSS.
-Git was used for version control, and Github for source code management and website publishing.
+Git was used for version control, GitHub for source code management, GitHub pages for website publishing.
 
-Live Website: https://roliastudio.com
+Live Website: [roliastudio.com](https://roliastudio.com)
 
 
 
