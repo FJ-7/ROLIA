@@ -7,10 +7,12 @@
   box-sizing: border-box;
 }
 
-html,
+html {
+  min-height: 100%;
+}
 body {
-    min-height: 100svh;
-  padding: 2rem;
+  min-height: 100svh;
+  padding: 4rem;
   display: flex;
   flex-direction: column;
   background-color: #F8F9FA;
@@ -20,7 +22,7 @@ body {
 
 
 header {
- width:100%;
+  width:100%;
 }
 
 
@@ -43,8 +45,7 @@ header {
   margin: 0;
   white-space: nowrap;
   text-align: center;
-    /*color: #fe0100;*/
-transform: translateX(-50%);
+  transform: translateX(-50%);
   color:black;
   font-size: 17px;
   font-weight: 200;
@@ -98,7 +99,7 @@ a {
 
 
 a:hover {
-color: #fe0100; /* Keeps text white, or change to match the glow */
+  color: #fe0100; /* Keeps text white, or change to match the glow */
   
   /* Stacking text-shadows creates the ambient glow effect */
   text-shadow: 
@@ -109,20 +110,14 @@ color: #fe0100; /* Keeps text white, or change to match the glow */
     0 0 80px #cfc7fc;   /* Deep background glow */
 }
 
-.location {
-  font-size:10px;
-  font-weight: 200;
-}
 
 @media (max-width: 1400px) {
-  html, body {
+  body {
     align-items: center;
     padding: 1rem;
   }
 
-  header {
-  width: 100%;
-  }
+  
 
 
   .brand {
@@ -132,10 +127,8 @@ color: #fe0100; /* Keeps text white, or change to match the glow */
     gap: 10px;
   }
 
-  .brand img {
-    margin: 0 auto;
-  }
-
+ 
+  
   .brand p {
     position: static;
     margin: 0;
@@ -178,7 +171,6 @@ color: #fe0100; /* Keeps text white, or change to match the glow */
 
 
 @media (max-width: 361px) {
-  html,
   body {
     padding: 6px;
   }
